@@ -24,14 +24,15 @@ public class ShiftySum {
 		 * 15) 7868,2
 		 */
 		 int N=in.nextInt();
+		 //Number want to shift
 		 int k=in.nextInt();
+		 //How many times shifting
 		 int answer=0;
 		 while(k>0) {
-			 answer=N*answer+k*10;
-			 System.out.println(answer);
+			 answer=(int) (answer+N*Math.pow(10, k));
 			 k=k-1;
 		 }
-		 System.out.println(answer);
+		 System.out.println(answer+N);
 	}
 
 }
