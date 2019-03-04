@@ -23,6 +23,15 @@ public class ShiftySum {
 		 * 14) 2503,1
 		 * 15) 7868,2
 		 */
+		 int N=in.nextInt();
+		 int k=in.nextInt();
+		 int answer=0;
+		 while(k>0) {
+			 answer=N*answer+k*10;
+			 System.out.println(answer);
+			 k=k-1;
+		 }
+		 System.out.println(answer);
 	}
 
 }
